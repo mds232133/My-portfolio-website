@@ -1,6 +1,6 @@
 #hero { min-height: 247px; overflow: hidden; }
 .hero-section { min-height: 247px; display: grid; grid-template-columns: 1fr 1.08fr; align-items: center; position: relative; }
-.hero-copy { z-index: 1; padding: 13px 0 25px 40px; }
+.hero-copy { z-index: 1; padding: 13px 0 25px 40px; color: var(--color-text); }
 .hero-greeting { margin-bottom: -2px; color: var(--color-text); font-size: clamp(19px, 2.8vw, 27px); font-weight: 550; letter-spacing: -.045em; text-transform: none; }
 .hero-copy h1 { margin: 0; font-size: clamp(30px, 4vw, 42px); font-weight: 780; letter-spacing: -.055em; line-height: 1.1; }
 .hero-copy h1 span { color: var(--color-primary); }
