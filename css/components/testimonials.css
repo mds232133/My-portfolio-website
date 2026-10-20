@@ -1,0 +1,10 @@
+#testimonials { padding-block: 20px; }
+#testimonials > .section-wrap > .section-heading { margin-bottom: 14px; }
+.testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.testimonial-card { position: relative; min-height: 90px; padding: 12px 12px 10px 16px; border: 1px solid var(--color-border); border-radius: 7px; background: var(--color-surface); }
+.quote-mark { position: absolute; top: 5px; left: 7px; color: var(--color-primary); font-size: 20px; font-weight: 800; line-height: 1; }
+.testimonial-card > p { margin: 0 0 9px 11px; color: var(--color-muted); font-size: 8px; line-height: 1.45; }
+.client { display: flex; align-items: center; gap: 7px; }
+.client-avatar { width: 19px; height: 19px; display: grid; place-items: center; border: 1px solid #473265; border-radius: 50%; color: #fff; background: linear-gradient(135deg,#ddad8d,#5d4c6e); font-size: 6px; font-weight: 700; }
+.avatar-two { background: linear-gradient(135deg,#e5bd9f,#774676); }.avatar-three { background: linear-gradient(135deg,#c49b7d,#365680); }
+.client b, .client small { display: block; }.client b { font-size: 7px; }.client small { color: var(--color-muted); font-size: 6px; }

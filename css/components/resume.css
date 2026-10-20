@@ -1,0 +1,10 @@
+#resume { padding-block: 19px 22px; }
+.resume-layout { display: grid; grid-template-columns: .78fr 1.55fr; gap: 50px; align-items: start; }
+.resume-intro .section-heading > p:last-child { max-width: 220px; }
+.resume-intro .button { margin-top: 12px; min-height: 28px; padding-inline: 12px; font-size: 8px; }
+.timeline { border-left: 1px solid #38266c; }
+.timeline-item { position: relative; display: grid; grid-template-columns: 88px 1fr; gap: 14px; padding: 0 0 14px 13px; }
+.timeline-item:last-child { padding-bottom: 0; }
+.timeline-item time { color: var(--color-muted); font-size: 8px; }
+.timeline-dot { position: absolute; top: 2px; left: -4px; width: 8px; height: 8px; border: 2px solid var(--color-bg); border-radius: 50%; background: var(--color-primary); }
+.timeline-item h3 { margin: 0; font-size: 9px; font-weight: 650; }.timeline-item .company { margin: 1px 0 3px; color: var(--color-muted); font-size: 8px; }.timeline-item div > p:last-child { max-width: 300px; margin: 0; color: var(--color-muted); font-size: 8px; line-height: 1.45; }

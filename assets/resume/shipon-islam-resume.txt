@@ -1,0 +1,18 @@
+Shipon Islam
+Frontend Developer & Web Designer
+Dhaka, Bangladesh
+shipon@example.com
++880 1712 345678
+
+PROFILE
+Web developer focused on building responsive, accessible, and user-friendly digital experiences.
+
+EXPERIENCE
+Frontend Developer — XYZ Tech Ltd. (Remote), 2023–Present
+Web Developer Intern — Creative Studio (Remote), 2022–2023
+Freelance Web Developer — Fiverr / Upwork, 2021–2022
+
+SKILLS
+HTML5, CSS3, JavaScript, React, Tailwind CSS, Git, GitHub, Node.js, MongoDB
+
+Note: Replace this sample resume content and contact details with your current information.

@@ -1,0 +1,19 @@
+#hero { min-height: 247px; overflow: hidden; }
+.hero-section { min-height: 247px; display: grid; grid-template-columns: 1fr 1.08fr; align-items: center; position: relative; }
+.hero-copy { z-index: 1; padding: 13px 0 25px 40px; }
+.hero-greeting { margin-bottom: -2px; color: var(--color-text); font-size: clamp(19px, 2.8vw, 27px); font-weight: 550; letter-spacing: -.045em; text-transform: none; }
+.hero-copy h1 { margin: 0; font-size: clamp(30px, 4vw, 42px); font-weight: 780; letter-spacing: -.055em; line-height: 1.1; }
+.hero-copy h1 span { color: var(--color-primary); }
+.hero-role { margin: 4px 0 7px; font-size: 16px; font-weight: 600; letter-spacing: -.025em; }
+.hero-role span { color: var(--color-primary-light); }
+.hero-description { max-width: 260px; margin: 0 0 12px; color: var(--color-muted); font-size: 10px; line-height: 1.5; }
+.hero-actions { display: flex; gap: 9px; margin-bottom: 13px; }
+.hero-visual { position: relative; align-self: stretch; min-height: 247px; display: flex; align-items: flex-end; justify-content: center; }
+.hero-orb { position: absolute; width: 270px; height: 220px; top: 25px; left: 50%; border-radius: 50%; background: radial-gradient(ellipse, #8a44ff80, #5122a633 47%, transparent 72%); filter: blur(8px); transform: translateX(-50%); }
+.hero-portrait { z-index: 1; width: min(280px, 64%); max-height: 238px; object-fit: cover; object-position: 50% 17%; border-radius: 105px 105px 0 0; mask-image: linear-gradient(to bottom, #000 72%, transparent 100%); }
+.hero-note { position: absolute; z-index: 2; top: 70px; right: 3px; color: var(--color-muted); font-family: cursive; font-size: 12px; font-style: italic; line-height: 1.25; transform: rotate(-10deg); }
+.hero-note span { color: var(--color-primary-light); }
+.hero-note b { display: block; padding-left: 14px; font-size: 22px; font-weight: 400; }
+.scroll-cue { position: absolute; bottom: 10px; left: 0; z-index: 2; width: 12px; height: 19px; border: 1px solid var(--color-muted); border-radius: 8px; }
+.scroll-cue span { display: block; width: 2px; height: 4px; margin: 3px auto; border-radius: 2px; background: var(--color-muted); animation: scroll-down 1.4s infinite; }
+@keyframes scroll-down { 0%,100% { transform: translateY(0); opacity: 1; } 70% { transform: translateY(5px); opacity: .25; } }

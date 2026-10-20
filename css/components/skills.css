@@ -1,0 +1,9 @@
+#skills { background: linear-gradient(90deg, var(--color-bg-soft), var(--color-bg)); }
+.skills-panel { padding: 23px 0 24px; }
+.compact-heading { margin-bottom: 9px; }
+.compact-heading h2 { font-size: 16px; }
+.compact-heading > p:last-child { max-width: 320px; font-size: 9px; }
+.skills-list { display: grid; grid-template-columns: repeat(3, minmax(90px, 1fr)); gap: 7px 9px; max-width: 375px; }
+.skill-chip { min-height: 25px; padding: 4px 8px; display: flex; align-items: center; gap: 7px; border: 1px solid var(--color-border); border-radius: 6px; color: var(--color-text); background: color-mix(in srgb, var(--color-surface) 70%, transparent); font-size: 8px; white-space: nowrap; }
+.skill-chip b { width: 12px; color: var(--color-primary-light); font-size: 9px; text-align: center; }
+.skill-chip .skill-html { color: #ff6447; }.skill-chip .skill-css { color: #47a7ff; }.skill-chip .skill-js { color: #f6d75d; font-size: 7px; }.skill-chip .skill-react { color: #67d9ee; }.skill-chip .skill-tailwind { color: #45d4ce; }.skill-chip .skill-node { color: #79d68d; }.skill-chip .skill-mongo { color: #53c783; }

@@ -1,0 +1,11 @@
+.nav-shell { width: min(calc(100% - 48px), var(--container-width)); height: 54px; margin-inline: auto; display: flex; align-items: center; }
+.brand { display: inline-flex; align-items: center; gap: 7px; font-size: 12px; font-weight: 750; letter-spacing: -.03em; }
+.brand-mark { color: var(--color-primary); font-size: 24px; font-weight: 900; line-height: 1; transform: skewY(-12deg); }
+.primary-navigation { display: flex; align-items: center; gap: 27px; margin-left: auto; }
+.primary-navigation a { position: relative; padding: 6px 0; color: var(--color-muted); font-size: 9px; transition: color .2s; }
+.primary-navigation a:hover, .primary-navigation a.active { color: var(--color-primary-light); }
+.primary-navigation a.active::after { position: absolute; right: 0; bottom: 0; left: 0; height: 1px; background: var(--color-primary); content: ""; }
+.theme-toggle, .menu-toggle { color: var(--color-text); border: 0; background: transparent; cursor: pointer; }
+.theme-toggle { width: 35px; height: 35px; margin-left: 22px; display: grid; place-items: center; }
+.theme-toggle svg { width: 13px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.menu-toggle { display: none; }

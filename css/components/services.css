@@ -1,0 +1,7 @@
+#services { padding-block: 20px; }
+.services-inner { display: grid; grid-template-columns: .86fr 1fr; gap: 24px; align-items: center; }
+.services-inner > .section-heading > p:last-child { max-width: 240px; }
+.services-list { display: grid; grid-template-columns: 1fr 1fr; gap: 9px 15px; }
+.service-item { display: flex; align-items: center; gap: 10px; }
+.service-icon { width: 26px; height: 26px; flex: 0 0 26px; display: grid; place-items: center; border: 1px solid #35255d; border-radius: 8px; color: var(--color-primary-light); background: #1a1430; font-size: 12px; }
+.service-item h3 { margin: 0; font-size: 9px; font-weight: 650; }.service-item p { margin: 1px 0 0; color: var(--color-muted); font-size: 7px; }
