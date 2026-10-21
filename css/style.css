@@ -25,10 +25,15 @@ main > section { grid-column: 1 / -1; border-bottom: 1px solid color-mix(in srgb
 .hero-actions .button-secondary:hover, .hero-actions .button-secondary:focus-visible { background:linear-gradient(110deg, #713cf5, #9558ff); }
 .button-outline { color: var(--color-text); border-color: var(--color-primary); background: transparent; }
 .social-links { display: flex; align-items: center; gap: 17px; }
-.social-links a { width: 14px; height: 16px; display: grid; place-items: center; color: var(--color-text); opacity: .88; transition: color .2s, transform .2s; }
-.social-links a:hover { color: var(--color-primary-light); transform: translateY(-2px); }
-.social-links svg { width: 13px; height: 13px; fill: currentColor; }
-.social-links a:last-child svg { fill: none; stroke: currentColor; stroke-width: 1.6; }
+.social-links a { flex: 0 0 40px; width: 40px; height: 40px; display: grid; place-items: center; border: 1px solid var(--color-border); border-radius: 50%; color: var(--color-text); background: color-mix(in srgb, var(--color-surface) 80%, transparent); transition: color .2s, background .2s, border-color .2s, transform .2s; }
+.social-links a:hover { border-color: color-mix(in srgb, var(--color-primary) 65%, var(--color-border)); color: var(--color-primary-light); background: color-mix(in srgb, var(--color-primary) 18%, var(--color-surface)); transform: translateY(-3px); }
+.hero-section .social-links a { border-color: #ffffff38; color: #f4f5fa; background: #101522d9; }
+.hero-section .social-links a:hover { border-color: var(--color-primary-light); color: #fff; background: linear-gradient(135deg, #713cf5, #9558ff); }
+.social-icon { display: inline-block; flex: 0 0 auto; width: 18px; height: 18px; background-color: currentColor; -webkit-mask: center / contain no-repeat; mask: center / contain no-repeat; }
+.social-icon-github { -webkit-mask-image: url("../assets/icons/github.svg"); mask-image: url("../assets/icons/github.svg"); }
+.social-icon-linkedin { -webkit-mask-image: url("../assets/icons/linkedin.svg"); mask-image: url("../assets/icons/linkedin.svg"); }
+.social-icon-x { -webkit-mask-image: url("../assets/icons/x.svg"); mask-image: url("../assets/icons/x.svg"); }
+.social-icon-dribbble { -webkit-mask-image: url("../assets/icons/dribbble.svg"); mask-image: url("../assets/icons/dribbble.svg"); }
 .site-status { position: fixed; z-index: 30; right: 20px; bottom: 20px; max-width: min(360px, calc(100% - 40px)); padding: 10px 14px; border: 1px solid var(--color-border); border-radius: 8px; color: var(--color-text); background: var(--color-surface-raised); box-shadow: 0 10px 35px #0005; opacity: 0; transform: translateY(8px); pointer-events: none; transition: .2s; }
 .site-status.visible { opacity: 1; transform: translateY(0); }
 .site-status.error { border-color: #ed6a7b; }

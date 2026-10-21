@@ -25,8 +25,8 @@
   .hero-description { max-width: 370px; margin-bottom: 17px; font-size: 14px; }
   .hero-actions { gap: 12px; margin-bottom: 18px; }
   .social-links { gap: 21px; }
-  .social-links a { width: 18px; height: 20px; }
-  .social-links svg { width: 17px; height: 17px; }
+  .social-links a { width: 40px; height: 40px; }
+  .social-links .social-icon { width: 18px; height: 18px; }
   .hero-visual { min-height: 360px; }
   .hero-orb { top: 30px; width: 370px; height: 295px; }
   .hero-portrait { width: min(355px, 68%); max-height: 345px; border-radius: 140px 140px 0 0; }
@@ -225,8 +225,8 @@
   .hero-description { max-width: 440px; margin-bottom: 22px; font-size: 17px; }
   .hero-actions { gap: 15px; margin-bottom: 23px; }
   .social-links { gap: 24px; }
-  .social-links a { width: 22px; height: 24px; }
-  .social-links svg { width: 20px; height: 20px; }
+  .social-links a { width: 42px; height: 42px; }
+  .social-links .social-icon { width: 20px; height: 20px; }
   .hero-visual { min-height: 500px; }
   .hero-orb { top: 38px; width: 500px; height: 390px; }
   .hero-portrait { width: min(455px, 76%); max-height: 480px; border-radius: 180px 180px 0 0; }
@@ -373,8 +373,8 @@
   .hero-description { max-width: 500px; margin-bottom: 26px; font-size: 19px; }
   .hero-actions { gap: 18px; margin-bottom: 27px; }
   .social-links { gap: 28px; }
-  .social-links a { width: 25px; height: 27px; }
-  .social-links svg { width: 23px; height: 23px; }
+  .social-links a { width: 44px; height: 44px; }
+  .social-links .social-icon { width: 23px; height: 23px; }
 
   .overview-grid, .skills-panel { padding-block: 52px; }
   .about-card { grid-template-columns: 250px 1fr; gap: 56px; }

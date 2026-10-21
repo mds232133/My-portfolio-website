@@ -39,11 +39,34 @@ const initializers = [
   initFooter,
 ];
 
+let componentsLoaded = false;
+
 try {
   await Promise.all(components.map(([selector, path]) => loadComponent(selector, path)));
-  initializers.forEach((initialize) => initialize());
-  document.dispatchEvent(new Event("componentsLoaded"));
+  componentsLoaded = true;
 } catch (error) {
-  console.error("Unable to initialize the portfolio page.", error);
-  announce("Some page content could not be loaded. Please refresh and try again.", "error");
+  console.error("Unable to load portfolio components.", error);
+  const message = window.location.protocol === "file:"
+    ? "Components need a local web server. Open this page with VS Code Live Server, then refresh."
+    : "Unable to load page components. Check the server and refresh the page.";
+  announce(message, "error");
+}
+
+if (componentsLoaded) {
+  const initializationErrors = [];
+
+  initializers.forEach((initialize) => {
+    try {
+      initialize();
+    } catch (error) {
+      console.error(`Unable to initialize ${initialize.name}.`, error);
+      initializationErrors.push(initialize.name);
+    }
+  });
+
+  document.dispatchEvent(new Event("componentsLoaded"));
+
+  if (initializationErrors.length > 0) {
+    announce("Some page interactions could not start. Check the browser console.", "error");
+  }
 }

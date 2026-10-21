@@ -5,7 +5,8 @@ export async function loadComponent(selector, filePath) {
     throw new Error(`Component container not found: ${selector}`);
   }
 
-  const response = await fetch(filePath);
+  const componentUrl = new URL(`../${filePath}`, import.meta.url);
+  const response = await fetch(componentUrl, { cache: "no-cache" });
   if (!response.ok) {
     throw new Error(`Failed to load ${filePath}: ${response.status} ${response.statusText}`);
   }
